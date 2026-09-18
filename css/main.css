@@ -42,7 +42,58 @@ p.teaser {
 	font-style: italic;
 	font-size: 1.5rem;
 }
-
+div.content {
+	width: 80%;
+	margin: auto;
+}
+p.text-bubble,
+p.text-bubble {
+	font-size: 1.5rem;
+	width: 50%;
+	max-width: 400px;
+	text-align: right;
+	margin: auto;
+	margin-top: 1rem;
+	border: 1px solid rgba(200,200,200,1);
+	border-radius: 1rem;
+	padding: 1rem;
+	background-color: rgba(255,255,255,1);
+	box-shadow: rgba(0,0,0,0.1) 0rem 0.25rem 0.5rem;  
+}
+p.text-bubble.right {
+	margin-right: 1rem;
+}
+p.text-bubble.left {
+	margin-left: 1rem;
+}
+span.emoji {
+	position: relative;
+}
+span.emoji span.tool-tip {
+	display: none;
+}
+span.emoji span.tool-tip.visible,
+span.emoji:hover span.tool-tip {
+	display: inline-block;
+	position: absolute;
+	border: 1px solid rgba(200,200,200,1);
+	border-radius: 10rem;
+	padding: 0.5rem;
+	font-size: 5rem;
+	background-color: rgba(255,255,255,1);
+	box-shadow: rgba(0,0,0,0.1) 0rem 0.25rem 0.75rem;  
+}
+span.mouse {
+	display: inline-block;
+	position: absolute;
+	font-size: 2rem;
+	transform: rotate(-135deg);
+	left: 1rem;
+	top: -0rem;
+	outline: black;
+	color: rgba(100, 100, 100, 1);
+	//box-shadow: rgba(0,0,0,0.1) 0rem 0.25rem 0.75rem;  
+}
 hr {
 	margin: 2rem 0rem 1rem 0rem;
 	border-left: none;
