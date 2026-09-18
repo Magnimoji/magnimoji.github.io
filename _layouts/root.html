@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Magnimoji</title>
+	<!--<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">-->
+	<link rel="stylesheet" href="css/main.css" />
+	<!--<link rel="shortcut icon" href="img/app_icon.png"> -->
+</head>
+
+<body>
+	<p class="appIcon">🧐</p>
+	<!--<img src="img/app_icon.png" class="logo" />
+	<div class="navigation">
+		{% if page.id == 'home' %}
+		<a class="current-page" href="/">Overview</a>
+		{% else %}
+		<a href="/">Overview</a>
+		{% endif %}
+		{% if page.id == 'plugins' %}
+		<a class="current-page" href="/plugins">Plugins</a>
+		{% else %}
+		<a href="/plugins">Plugins</a>
+		{% endif %}
+		{% if page.id == 'sponsors' %}
+		<a class="current-page" href="/sponsors">Sponsors</a>
+		{% else %}
+		<a href="/sponsors">Sponsors</a>
+		{% endif %}
+		<a href="https://github.com/MacPass/MacPass/wiki">Documentation</a>
+		<a href="https://github.com/MacPass/MacPass/">GitHub</a>
+	</div>-->
+
+	<h1>{{ page.title }}</h1>
+	<div class="content">
+		{{content}}
+	</div>
+	<footer>
+		<!--<a href="https://mastodon.social/@macpass">Mastodon</a>
+		<a href="https://github.com/MacPass/MacPass/">GitHub</a>
+		<a href="/legal-notice">Legal notice</a>
+		<a href="/faq">FAQ</a>
+		{% for link in page.footer_links %}
+		<a href="{{ link['url'] }}">{{ link['name'] }}</a>
+		{% endfor %}-->
+		<p id="copyright">&copy; 2026 HicknHack Software GmbH</p>
+	</footer>
+</body>
+
+</html>
